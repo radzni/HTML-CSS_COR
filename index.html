@@ -11,9 +11,17 @@
         }
         header {
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
         }
         table{
             border: 1px solid black;
+            
+            justify-content: center;
+            padding: 0px;
+            border-bottom: 1px solid #ccc;
             
         }
         th, td {
@@ -25,17 +33,39 @@
             padding: 20px;
             border: 1px solid black;
         }
+        .header img {
+            margin-right: 0px;
+            vertical-align: middle;
+        }
+        .header .text {
+            text-align: center;
+            padding: 50px;
+        }
+        .header .text h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header .text p {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+        }
 
     </style>
 </head>
 <header>
-    <p>Republic of the Philippines</p>
-    <h2>Palawan State University</h2>
-    <p>Puerto Princessa City</p>
-    <h2 style="letter-spacing: 15px">CERTIFICATE OF REGISTRATION</h2>
-    <p style="text-align: left;">Registration No: <span style="color: red; font-weight: 1000;">00367583</span></p>
+    <img src="PSU_LOGO.jpg"  width="100" height="100" alt="Palawan State University Logo">
+    <div class="header">
+        <div class="text">
+            <p>Republic of the Philippines</p>
+            <h1>Palawan State University</h1>
+            <p>Puerto Princesa City</p>
+        </div>
+    </div>
+    
 </header>
 <body>
+    <h2 style="letter-spacing: 15px; text-align: center;">CERTIFICATE OF REGISTRATION</h2>
+    <p style="text-align: left;">Registration No: <span style="color: red; font-weight: 1000;">00367583</span></p>
     <table style="width: 100%;">
         <thead>
             
@@ -55,9 +85,11 @@
                 <td>Program: <strong>Bachelor of Science in Inforamtion Technology</strong></td>
                 <td>Curicullum: <strong>08-BSIT-2019</strong></td>
             </tr>
-            <tr style="text-align: center;">
-                <td colspan="3">Major: </td>
+            <tr>
+                <td></td>
+                <td colspan="2">Major: </td>
             </tr>
+            <tr>
             <td>
                 <table style="border: 0; width: 70%;">
                 <tr>
@@ -67,12 +99,25 @@
                 </table>
             </td>
             <td>Year Level: <strong>3rs Year</strong></td>
-            <tr style="text-align: center;">
-                <td style="background-color: rgba(0, 0, 800, 0.3); font-size: small;padding: 2px 5px;"colspan="3"><strong>UNIT</strong></td>
             </tr>
             <tr>
+            <td colspan="3" style="padding: 0;">
+                <table style="width: 100%; background-color: rgba(0, 0, 800, 0.3); border: 0;">
+                    <tr>
+                        <td colspan="7" style="text-align: center; padding: 2px 5px;font-size: small; letter-spacing: 50px;"><strong>UNIT</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CODE</strong></td>
+                        <td><strong>SUBJECT TITLE</strong></td>
+                        <td colspan="2" style="text-align: center; word-spacing: 50px;"><strong>Lec Lab Credit</strong></td>
+                        <td></td>
+                        <td><strong>SECTION</strong></td>
+                        <td><strong>SCHEDULE/ROOM</strong></td>
+                        <td><strong>FACULTY SIGNATURE</strong></td>
 
-                <td style="background-color: rgba(0, 0, 800, 0.3); font-size: small;padding: 2px 5px;"colspan="3"><strong>STUDENT GENERAL INFORMATION</strong></td>
+                    </tr>
+                </table>
+            </td>
             </tr>
             <td>
             <table>
