@@ -5,334 +5,452 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CERTIFICATE OF REGISTRATION</title>
     <style>
-        body,header {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+        /* A4 Paper Dimensions */
+        @page {
+            size: A4;
+            margin: 0;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0; /* Light background color to contrast with the paper */
+        }
+
+        .certificate-container {
+            width: 21cm;
+            height: auto;
+            padding: 2cm;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            overflow: hidden;
+        }
+
         header {
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            
         }
-        table{
-            border: 1px solid black;
-            padding: 0px;
-            
-            
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1cm;
+            font-size: small;
         }
+
         th, td {
-            padding: 10px;
+            padding: -5px 0px;
+            font-size: smaller;
+            
         }
 
         .header img {
             margin-right: 0px;
             vertical-align: middle;
         }
+
         .header .text {
             text-align: center;
             padding: 50px;
         }
+
         .header .text h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 20px;
         }
+
         .header .text p {
             margin: 5px 0 0 0;
             font-size: 16px;
         }
 
+        h3 {
+            font-size: 20px;
+            margin: 0%;
+            letter-spacing: 10px;
+            text-align: center;
+            padding: 0;
+        }
+
+        table {
+            border: 1px solid black;
+        }
+
+        /* Additional styling */
+        table td {
+            padding: 10px;
+        }
+
+        table thead {
+            background-color: rgba(0, 0, 128, 0.3);
+        }
+
+        .fees-table td {
+            border: none;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.8em;
+            padding: 10px;
+            margin-top: 2cm;
+            border-top: 1px solid black;
+        }
+
+        /* Ensuring everything stays within bounds */
+        @media print {
+            body {
+                width: auto;
+                height: auto;
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                display: block;
+            }
+
+            table, td, th {
+                page-break-inside: avoid;
+            }
+
+            .certificate-container {
+                margin: 0;
+            }
+        }
     </style>
 </head>
-<header>
-    <img src="PSU_LOGO.jpg"  width="150" height="150" alt="Palawan State University Logo">
-    <div class="header">
-        <div class="text">
-            <p>Republic of the Philippines</p>
-            <h1>Palawan State University</h1>
-            <p>Puerto Princesa City</p>
-        </div>
-    </div>
-    
-</header>
+
 <body>
-    <h2 style="letter-spacing: 15px; text-align: center; padding: 0;">CERTIFICATE OF REGISTRATION</h2>
-    <p style="text-align: left;">Registration No: <span style="color: red; font-weight: 1000;">00367583</span></p>
-    <table style="width: 100%;">
-        <tbody>
-            <tr style="text-align: center;">
-                <td style="border: 1px solid black; background-color: rgba(0, 0, 800, 0.3); font-size: small;padding: 2px 5px;"colspan="3"><strong>STUDENT GENERAL INFORMATION</strong></td>
-            </tr>
-            <tr>
-                <td>Student No: <strong>2022-8-0084</strong></td>
-                <td style="text-align: center; padding: 0px 30px 0px 10px;">College: <strong>College of Sciences</strong></td>
-                <td style="text-align: right;">School Year: <strong>2024-2025 FIRST SEMESTER</strong></td>
-            
-            </tr>
-            <tr>
-                <td>Name: <strong>HASSAN, RADZNI R</strong></td>
-                <td style="text-align: center; padding: 5px 0px 0px 185px;">Program: <strong>Bachelor of Science in Inforamtion Technology</strong></td>
-                <td style="text-align: right;padding: 5px 140px;">Curicullum: <strong>08-BSIT-2019</strong></td>
-            </tr>
-            <tr style="border: 1;">
-                <td></td>
-                <td style="text-align: center;padding: 5px 160px 5px 0px;">Major: </td>
-                <td></td>
-            </tr>
-            <tr>
-            <td>
-                <table style="border: 0; width: 100%;">
-                <tr>
-                    <td style="text-align: left; padding: 0;">Gender: <strong>Male</strong></td>
-                    <td></td>
-                    <td style="text-align: right; padding: 5px 90px;">Age: <Strong>20</Strong></td>
-                </tr>
-                </table>
-            </td>
-            <td style="text-align: center; padding: 5px 140px 0px 10px;">Year Level: <strong>3rd Year</strong></td>
-            </tr>
-            <tr>
-            <td colspan="3" style="padding: 0;">
-                <table style="width: 100%; border: 0; border-collapse: collapse;">
-                    <thead style="background-color: rgba(0, 0, 800, 0.3);">
-                    <tr>
-                        <td></td>
-                        <td colspan="4" style="text-align: center; padding: 2px 5px;font-size: medium; letter-spacing: 30px;"><strong>UNIT</strong></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><strong>CODE</strong></td>
-                        <td style="padding: 5px 100px;"><strong>SUBJECT TITLE</strong></td>
-                        <td style="text-align: center; word-spacing: 50px;"><strong>Lec Lab Credit</strong></td>
-                        <td><strong>SECTION</strong></td>
-                        <td><strong>SCHEDULE/ROOM</strong></td>
-                        <td><strong>FACULTY SIGNATURE</strong></td>
-
-                    </tr>
-                    </thead>
-                <tbody>
-                    <tr>
-                        <td>IT 8/L</td>
-                        <td>Advance Database System</td>
-                        <td style="text-align: center; word-spacing: 50px;">2.0 1.0 3.0</td>
-                        <td>BSIT3B2</td>
-                        <td>
-                            <p>Th 07:30am - 9:30am/CL1</p>
-                            <p>T 07:30am - 10:30am/MTC1</p>
-                        </td>
-                        <td><u>Lopez, Menchie L.</u></td>
-                    </tr>
-                    <tr>
-                        <td>IT 9/L</td>
-                        <td>Network Technologies 2</td>
-                        <td style="text-align: center; word-spacing: 50px;" >2.0 1.0 3.0</td>
-                        <td>BSIT3B2</td>
-                        <td>
-                            <p>T 10:30am - 01:30am/IT101</p>
-                            <p>Th 09:30am - 11:30am/CL1</p>
-                        </td>
-                        <td><u>Baguio, Kim C.</u></td>
-                    </tr>
-                    <tr>
-                        <td>IT 10/L</td>
-                        <td>Inforamtion Assurance and Security 1</td>
-                        <td style="text-align: center; word-spacing: 50px;">2.0 1.0 3.0</td>
-                        <td>BSIT3B2</td>
-                        <td>
-                            <p>Th 01:30pm - 04:30pm/MTC1</p>
-                            <p>T 03:30pm - 05:30pm/CL3</p>
-                        </td>
-                        <td><u>Pabliona, Tiffany O.</u></td>
-                    </tr>
-                    <tr>
-                        <td>IT 11/L</td>
-                        <td>Web Systems and Technologies</td>
-                        <td style="text-align: center; word-spacing: 50px;">2.0 1.0 3.0</td>
-                        <td>BSIT3B2</td>
-                        <td>
-                            <p>W 11:30am - 1:30pm/CL1</p>
-                            <p>M 10:30am - 01:30pm/IT101</p>
-                        </td>
-                        <td><u>Dosado, Roy Cyril D.</u></td>
-                    </tr>
-                    <tr>
-                        <td>IT 12/L</td>
-                        <td>Multimedia Systems</td>
-                        <td style="text-align: center; word-spacing: 50px;">2.0 1.0. 3.0</td>
-                        <td>BSIT3B2</td>
-                        <td>
-                            <p>M 04:30pm - 07:30pm/NIT3</p>
-                            <p>W 05:30pm - 07:30pm/CL3</p>
-                        </td>
-                        <td><u>Buliag, Rene V.</u></td>
-                    </tr>
-                    <tr>
-                        <td>GE-ET</td>
-                        <td>Ethics</td>
-                        <td style="text-align: center; word-spacing: 50px;">3.0 0.0 3.0</td>
-                        <td>BSIT3B2</td>
-                        <td>
-                            <p>TH 05:30pm - 07:00pm/IT-</p>
-                            <p>Room2</p>
-                        </td>
-                        <td><u>Maghari, Dionimer E.</u></td>
-                    </tr>
-                    <tr>
-                        <td>IT E3/L</td>
-                        <td>IT Elective 3</td>
-                        <td style="text-align: center; word-spacing: 50px;">2.0 1.0 3.0</td>
-                        <td>BSIT3B2</td>
-                        <td>
-                            <p>W 02:30pm - 05:30pm/ </p>
-                            <p>W 09:30am - 11:30am/CL2</p>
-                        </td>
-                        <td><u>Dizon, Demy R.</u></td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" style="text-align: center; text-align: right; word-spacing: 50px;padding: 5px 170px;">___ ___ ___</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align: right;">Total Unit(s)</td>
-                        <td style="text-align: center; word-spacing: 50px;">15.0 6.0 21.0</td>
-                    </tr>
-                </table>
-                </tbody>
-                <tr>
-                <td><i>Note: Subject marked with "*" is special subject</i></td>
-                </tr>
-                <td colspan="2" style="font-size: 10px; word-spacing: 0px; letter-spacing: 0;line-height: 1px;">
-                    <table style="height: 20%;">
-                        <tr>
-                            <td colspan="3" style="text-align: center; letter-spacing: 25px; font-size: smaller;background-color: rgba(0, 0, 800, 0.3); border-bottom: 2px solid black;"><strong>ASSESSED FEES</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Tuition Fee (21@200)</td>
-                            <td colspan="2" style="text-align: right;">4,200.00</td>
-                        </tr>
-                        <tr>
-                            <td>Misc-Library Fees</td>
-                            <td colspan="2" style="text-align: right;">200.00</td>
-                        </tr>
-                        <tr>
-                            <td>Misc-Atheletics</td>
-                            <td colspan="2" style="text-align: right;">300.00</td>
-                        </tr>
-                        <tr>
-                            <td>Misc-School Paper</td>
-                            <td colspan="2" style="text-align: right;">100.00</td>
-                        </tr>
-                        <tr>
-                            <td>Audio Visual Media Center</td>
-                            <td colspan="2" style="text-align: right;">100.00</td>
-                        </tr>
-                        <tr>
-                            <td>Student Government Organization Member Fee</td>
-                            <td colspan="2" style="text-align: right;">140.00</td>
-                        </tr>
-                        <tr>
-                            <td>Misc-Registration Fee</td>
-                            <td colspan="2" style="text-align: right;">100.00</td>
-                        </tr>
-                        <tr>
-                            <td>Misc-Medical & Dental Fees</td>
-                            <td colspan="2" style="text-align: right;">100.00</td>
-                        </tr>
-                        <tr>
-                            <td>Guidance Fee</td>
-                            <td colspan="2" style="text-align: right;">100.00</td>
-                        </tr>
-                        <tr>
-                            <td>SGO-Insurance Fee</td>
-                            <td colspan="2" style="text-align: right;">50.00</td>
-                        </tr>
-                        <tr>
-                            <td>Computer Laboratory Fees (IT 8/L(500);IT 9/L(500);IT)</td>
-                            <td colspan="2" style="text-align: right;">3,000.00</td>
-                        </tr>
-                        <tr>
-                            <td>Internet Fee</td>
-                            <td colspan="2" style="text-align: right;"><u>400.00</u></td>
-                        </tr>
-                                                <tr>
-                            <td style="border-bottom: 2px solid black; border-top: 2px solid black;"><Strong>Total Assessment:</Strong></td>
-                            <td colspan="2" style="text-align: right; word-spacing: 50px; border-bottom: 2px solid black; border-top: 2px solid black;"><strong>Php</strong>   8,890.00</td>
-                        </tr>
-                        <tr>
-                            <td style="border-bottom: 2px solid black; border-top: 2px solid black;"><Strong>Total Payment:</Strong></td>
-                            <td colspan="2" style="text-align: right; border-bottom: 2px solid black; border-top: 2px solid black;">0.00</td>
-                        </tr>
-                        <tr>
-                            <td style="border-bottom: 2px solid black; border-top: 2px solid black;"><strong>Outstanding Balance:</strong></td>
-                            <td colspan="2" style="text-align: right; word-spacing: 50px; border-bottom: 2px solid black; border-top: 2px solid black;"><strong>Php</strong>  8,890.00</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3" style="text-align: center; letter-spacing: 25px; font-size: smaller;background-color: rgba(0, 0, 800, 0.3); border: 2px solid black;"><strong>SCHEDULE OF PAYMENT</strong></td>
-                        </tr>
-                        <tr>
-                            <td style="border: 1px solid black;">1st Pymnt / Due Date </td>
-                            <td style="border: 1px solid black; text-align: left;">2nd Pymnt / Due Date </td>
-                            <td style="text-align: right;border: 1px solid black;">3rd Pymnt / Due Date </td>
-                        </tr>
-                        <tr>
-                            <td style="border: 1px solid black;">3,390.00   05/12/2024 </td>
-                            <td style="border: 1px solid black; text-align: left;/">2,720.00   08/25/2024 </td>
-                            <td style="text-align: right;border: 1px solid black;">2,780.00   11/29/2024</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <p style="text-align: left;font-size: small; padding: 0px 70px;"><strong>RULES ON REFUND</strong></p>
-                    <ol style="font-size: small; text-align: left; padding: 0px 200px 340px 0px;">
-                        <li><i>Full refund if tuition fee - before the start of calasses.</i></li>
-                        <li><i>80% refund of tuition fee - within 1 week from the start of classes.</i></li>
-                        <li><i>50% refund - within 2 weeks from the start of classes.</i></li>
-                        <li><i>No refund - after the 2nd week of classes.</i></li>
-                    </ol>
-                    <p style="word-spacing: 50px; margin-top: -150px; padding: 0px 10px 0px 0px;"><strong>Official_Receipt: </strong> <u>_________________</u></p>
-                    <p style="word-spacing: 50px;"><strong>Payment/Validation_Date: </strong> <u>05-Aug-2024__10:57am</u></p>
-                </td>
-                <tr style="text-align: left;">
-                    <td></td>
-                    <td></td>
-                    <td><strong>APPROVED BY:</strong></td>
+    <div class="certificate-container">
+        <header>
+            <img src="PSU_LOGO.jpg"  width="100" height="100" alt="Palawan State University Logo">
+            <div class="header">
+                <div class="text">
+                    <p>Republic of the Philippines</p>
+                    <h1>Palawan State University</h1>
+                    <p>Puerto Princesa City</p>
+                </div>
+            </div>
+        </header>
+        <h3>CERTIFICATE OF REGISTRATION</h3>
+        <p>Registration No: <span style="color: red; font-weight: 1000;">00367583</span></p>
+        <table style="font-size: smaller;">
+            <tbody>
+                <tr style="text-align: center;">
+                    <td style="border: 1px solid black; background-color: rgba(0, 0, 800, 0.3); font-size: small; padding: 2px 3px;" colspan="3"><strong>STUDENT GENERAL INFORMATION</strong></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td style="margin: 0px;">_____________________</td>
+                    <td style="padding: 0px 5px;">Student No: <strong>2022-8-0084</strong></td>
+                    <td style="text-align: left; padding: 0px 0px 0px 45px;">College: <strong>College of Sciences</strong></td>
+                    <td style="text-align: right; padding: 0px 5px;">School Year: <strong>2024-2025 FIRST SEMESTER</strong></td>
                 </tr>
                 <tr>
+                    <td style="padding: 0px 5px;">Name: <strong>HASSAN, RADZNI R.</strong></td>
+                    <td style="text-align: center; padding: 0px 5px;">Program: <strong>Bachelor of Science in Information Technology</strong></td>
+                    <td style="text-align: center; padding: 0px 0px 0px 60px;">Curicullum: <strong>08-BSIT-2019</strong></td>
+                </tr>
+                <tr style="border: 1;">
                     <td></td>
+                    <td style="text-align: left; padding: 2px 0px 2px 55px;">Major: </td>
                     <td></td>
-                    <td style="margin: 0px;"><Strong>CHERYLL ANNE C. DATOR, Ph.D.</Strong></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td style="padding: 0px 0px 10px 10px; margin: 0px;">_____________________</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td style="padding: 0px 0px 100px 10px;" ><strong>University Registrar</strong></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td style="font-size: smaller; text-align: right;">Date Printed: August 14,2024 10:13:46AM</td>
-                </tr>
-                <tfoot>
-                    <tr>
-                        <td colspan="3" style="text-align: center; letter-spacing: 5px; font-size: smaller;background-color: rgba(0, 0, 800, 0.3); border: 2px solid black; padding: auto;"><strong>KEEP THIS CERTIFICATE. YOU WILL BE REQUIRED TO PRESENT THIS IN ALL YOUR DEALINGS WITH THE COLLEGE.</strong>
+                    <td style="padding: 0;">
+                        <table style="border: 0; margin: 0; padding: 0;">
+                            <tr>
+                                <td style="text-align: left; padding: 0px;">Gender:<strong>Male</strong></td>
+                                <td></td>
+                                <td style="text-align: right; padding: 0px 5px;">Age:<strong>20</strong></td>
+                            </tr>
+                        </table>
                     </td>
-                    </tr>
-                </tfoot>
-                </table>
-            </td>
-            </tr>            
-        </tbody>
-    </table>
-
+                    <td style="padding: 0px 50px; ">Year Level: <strong>3rd Year</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="padding: 0px;">
+                        <table style="width: 100%; border: 0;">
+                            <thead style="background-color: rgba(0, 0, 800, 0.3);">
+                                <tr>
+                                    <td></td>
+                                    <td colspan="4" style="text-align: center; padding: 2px; font-size: small; letter-spacing: 15px;"><strong>UNIT</strong></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="font-size: small;">
+                                    <td><strong>CODE</strong></td>
+                                    <td style="text-align: center;"><strong>SUBJECT TITLE</strong></td>
+                                    <td style="text-align: center;font-size: x-small;"><strong>Lec Lab Credit</strong></td>
+                                    <td><strong>SECTION</strong></td>
+                                    <td><strong>SCHEDULE/ROOM</strong></td>
+                                    <td><strong>FACULTY SIGNATURE</strong></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="font-size: smaller;">
+                                    <td>IT 8/L</td>
+                                    <td>Advance Database System</td>
+                                    <td style="text-align: center;word-spacing: 5px">2.0 1.0 3.0</td>
+                                    <td>BSIT3B2</td>
+                                    <td style="padding: 0px 5px;">
+                                        <p>Th 07:30am - 9:30am/CL1</p>
+                                        <p>T 07:30am - 10:30am/MTC1</p>
+                                    </td>
+                                    <td><u>Lopez, Menchie L.</u></td>
+                                </tr>
+                                <tr style="font-size: smaller;">
+                                    <td>IT 9/L</td>
+                                    <td>Network Technologies 2</td>
+                                    <td style="text-align: center;word-spacing: 5px" >2.0 1.0 3.0</td>
+                                    <td>BSIT3B2</td>
+                                    <td style="padding: 1px 5px;">
+                                        <p>T 10:30am - 01:30am/IT101</p>
+                                        <p>Th 09:30am - 11:30am/CL1</p>
+                                    </td>
+                                    <td><u>Baguio, Kim C.</u></td>
+                                </tr>
+                                <tr style="font-size: smaller;">
+                                    <td>IT 10/L</td>
+                                    <td>Inforamtion Assurance and Security 1</td>
+                                    <td style="text-align: center;word-spacing: 5px">2.0 1.0 3.0</td>
+                                    <td>BSIT3B2</td>
+                                    <td style="padding: 1px 5px;">
+                                        <p>Th 01:30pm - 04:30pm/MTC1</p>
+                                        <p>T 03:30pm - 05:30pm/CL3</p>
+                                    </td>
+                                    <td><u>Pabliona, Tiffany O.</u></td>
+                                </tr>
+                                <tr style="font-size: smaller;"> 
+                                    <td>IT 11/L</td>
+                                    <td>Web Systems and Technologies</td>
+                                    <td style="text-align: center;word-spacing: 5px">2.0 1.0 3.0</td>
+                                    <td>BSIT3B2</td>
+                                    <td style="padding: 1px 5px;">
+                                        <p>W 11:30am - 1:30pm/CL1</p>
+                                        <p>M 10:30am - 01:30pm/IT101</p>
+                                    </td>
+                                    <td><u>Dosado, Roy Cyril D.</u></td>
+                                </tr>
+                                <tr style="font-size: smaller;">
+                                    <td>IT 12/L</td>
+                                    <td>Multimedia Systems</td>
+                                    <td style="text-align: center;word-spacing: 5px">2.0 1.0. 3.0</td>
+                                    <td>BSIT3B2</td>
+                                    <td style="padding: 1px 5px;">
+                                        <p>M 04:30pm - 07:30pm/NIT3</p>
+                                        <p>W 05:30pm - 07:30pm/CL3</p>
+                                    </td>
+                                    <td><u>Buliag, Rene V.</u></td>
+                                </tr>
+                                <tr style="font-size: smaller;">
+                                    <td>GE-ET</td>
+                                    <td>Ethics</td>
+                                    <td style="text-align: center;word-spacing: 5px">3.0 0.0 3.0</td>
+                                    <td>BSIT3B2</td>
+                                    <td style="padding: 1px 5px;">
+                                        <p>TH 05:30pm - 07:00pm/IT-</p>
+                                        <p>Room2</p>
+                                    </td>
+                                    <td><u>Maghari, Dionimer E.</u></td>
+                                </tr>
+                                <tr style="font-size: smaller;">
+                                    <td>IT E3/L</td>
+                                    <td>IT Elective 3</td>
+                                    <td style="text-align: center;word-spacing: 5px">2.0 1.0 3.0</td>
+                                    <td>BSIT3B2</td>
+                                    <td style="padding: 1px 5px;">
+                                        <p>W 02:30pm - 05:30pm/ </p>
+                                        <p>W 09:30am - 11:30am/CL2</p>
+                                    </td>
+                                    <td><u>Dizon, Demy R.</u></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align: center; word-spacing: 5px;padding: 2px 5px;">__ __ __</td>
+                                    <td></td>
+                                </tr>
+            
+                                <tr style="padding: 1px 5px;">
+                                    <td></td>
+                                    <td style="text-align: right;">Total Unit(s)</td>
+                                    <td style="text-align: center;font-size: smaller;"><strong>15.0 6.0 21.0</strong></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><i>Note: Subject marked with "*" is special subject</i></td>
+                </tr>
+                    <td colspan="2" style="word-spacing: 0px; letter-spacing: 0;line-height: 0px;padding: 0px 5px; margin: 0%;">
+                        <table style="margin: 0%; font-size: x-small;">
+                            <tr>
+                                <td colspan="2" style="text-align: center; letter-spacing: 10px; font-size: smaller;background-color: rgba(0, 0, 800, 0.3); border: 2px solid black;"><strong>ASSESSED FEES</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Tuition Fee (21@200)</td>
+                                <td style="text-align: right;">4,200.00</td>
+                            </tr>
+                            <tr>
+                                <td>Misc-Library Fees</td>
+                                <td  style="text-align: right;">200.00</td>
+                            </tr>
+                            <tr>
+                                <td>Misc-Atheletics</td>
+                                <td  style="text-align: right;">300.00</td>
+                            </tr>
+                            <tr>
+                                <td>Misc-School Paper</td>
+                                <td  style="text-align: right;">100.00</td>
+                            </tr>
+                            <tr>
+                                <td>Audio Visual Media Center</td>
+                                <td  style="text-align: right;">100.00</td>
+                            </tr>
+                            <tr>
+                                <td>Student Government Organization Member Fee</td>
+                                <td  style="text-align: right;">140.00</td>
+                            </tr>
+                            <tr>
+                                <td>Misc-Registration Fee</td>
+                                <td  style="text-align: right;">100.00</td>
+                            </tr>
+                            <tr>
+                                <td>Misc-Medical & Dental Fees</td>
+                                <td  style="text-align: right;">100.00</td>
+                            </tr>
+                            <tr>
+                                <td>Guidance Fee</td>
+                                <td  style="text-align: right;">100.00</td>
+                            </tr>
+                            <tr>
+                                <td>SGO-Insurance Fee</td>
+                                <td  style="text-align: right;">50.00</td>
+                            </tr>
+                            <tr>
+                                <td>Computer Laboratory Fees (IT 8/L(500);IT 9/L(500);IT)</td>
+                                <td  style="text-align: right;">3,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>Internet Fee</td>
+                                <td  style="text-align: right;"><u>400.00</u></td>
+                            </tr>
+                            <tr>
+                                <td style="border-bottom: 2px solid black; border-top: 2px solid black;"><Strong>Total Assessment:</Strong></td>
+                                <td style="text-align: right; word-spacing: 30px; border-bottom: 2px solid black; border-top: 2px solid black;"><strong>Php</strong> 8,890.00</td>
+                            </tr>
+                            <tr>
+                                <td style="border-bottom: 2px solid black; border-top: 2px solid black;"><Strong>Total Payment:</Strong></td>
+                                <td style="text-align: right; border-bottom: 2px solid black; border-top: 2px solid black;">0.00</td>
+                            </tr>
+                            <tr>
+                                <td style="border-bottom: 2px solid black; border-top: 2px solid black;"><strong>Outstanding Balance:</strong></td>
+                                <td style="text-align: right; word-spacing: 30px; border-bottom: 2px solid black; border-top: 2px solid black;"><strong>Php</strong>  8,890.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center; letter-spacing: 10px; font-size: smaller;background-color: rgba(0, 0, 800, 0.3); border: 2px solid black;"><strong>SCHEDULE OF PAYMENT</strong></td>
+                            </tr>
+                            <table style="padding: 2px 5px; margin: 0%; font-size: x-small; ">
+                            <tr>
+                                <td style="border: 1px solid black; text-align: center;">1st Pymnt / Due Date </td>
+                                <td style="border: 1px solid black; text-align: center;">2nd Pymnt / Due Date </td>
+                                <td style="text-align: center;border: 1px solid black;">3rd Pymnt / Due Date </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; text-align: center;">3,390.00   05/12/2024 </td>
+                                <td style="border: 1px solid black; text-align: center;/">2,720.00   08/25/2024 </td>
+                                <td style="text-align: center;border: 1px solid black;">2,780.00   11/29/2024</td>
+                            </tr>
+                            </table>
+                            </td>
+                            <td>
+                            <table style="border: none; margin: 0%;">
+                                <tr><p style="text-align: left;font-size: small; padding: 0px 70px;"><strong>RULES ON REFUND</strong></p></tr>
+                                <tr>
+                                    <ol style="font-size: small; text-align: left;">
+                                    <li><i>Full refund if tuition fee - before the start of calasses.</i></li>
+                                    <li><i>80% refund of tuition fee - within 1 week from the start of classes.</i></li>
+                                    <li><i>50% refund - within 2 weeks from the start of classes.</i></li>
+                                    <li><i>No refund - after the 2nd week of classes.</i></li>
+                                    </ol>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                <tr>
+                                    <td>                   </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td style="word-spacing: 40px;"><strong>Official_Receipt: ____________________________ </strong></td>
+                                </tr>
+                                <tr >
+                                    <td style="word-spacing: 10px;">
+                                     <strong>Payment/Validation_Date: ____________________________</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                            <tr>
+                                <td colspan="3" style="text-align: right; padding-right: 250px;"><Strong>APPROVED BY:</Strong></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: right; padding-right: 70px;">________________________________
+                                    <ul style="padding-right: 5px; margin: 0%;"><u>___CHERYLL ANNE DATOR,Ph.D___</u></ul> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>    </td>
+                            </tr>
+                            <tr>
+                                <td>    </td>
+                            </tr>
+                            <tr>
+                                <td>    </td>
+                            </tr>
+                            <tr>
+                                <td>    </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="font-size: smaller; text-align: right; margin-bottom: 0%;">Date Printed: August 14,2024 10:13:46AM</td>
+                            </tr>
+                            <tr>
+                            <td colspan="3" style="text-align: center; font-size: smaller; background-color: rgba(0, 0, 800, 0.3);padding: 2px; border: 1px solid black;"><strong>KEEP THIS CERTIFICATE. YOU WILL BE REQUIRED TO PRESENT THIS IN ALL YOUR DEALINGS WITH THE COLLEGE.</strong></td>
+                            </tr>
+                        </table>
+                    </td>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
